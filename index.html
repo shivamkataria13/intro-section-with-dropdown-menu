@@ -19,24 +19,147 @@
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
 
-  Login
-  Register
 
-  Make remote work
+  <main class="main">
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <header class="header">
+
+      <div class="logo">
+        <img src="logo.svg" alt="logo">
+      </div>
+
+      <nav class="navbar open">
+
+        <div>
+          <button id="closemenu"><img src="icon-close-menu.svg" alt=""></button>
+        </div>
+
+
+
+        <ul class="nav-ul">
+
+          <div class="features">
+            
+            <li>Features</li> <img src="icon-arrow-down.svg" alt="" class="featuresarrow">
+            
+          </div>
+          
+          <div class="featuresmenu displaynone">
+            <ul>
+              <div class="featuresmenu1"><img src="icon-todo.svg" alt=""><li>Todo list</li></div>
+              <div class="featuresmenu2"><img src="icon-calendar.svg" alt=""><li>Calender</li></div>
+              <div class="featuresmenu3"><img src="icon-reminders.svg" alt=""><li>Reminders</li></div>
+              <div class="featuresmenu4"><img src="icon-planning.svg" alt=""><li>Planning</li></div>
+            </ul>
+          </div>
+          
+          <div class="company">
+
+            <li>Company</li> <img src="icon-arrow-down.svg" alt="" class="companyarrow">
+            
+          </div>
+          
+          <div class="companymenu displaynone">
+           <ul>
+            <li>History</li>
+            <li>Our team</li>
+            <li>Blog</li>
+           </ul>
+          </div>
+
+          <li>Careers</li>
+          <li>About</li>
+          <button class="login" type="button">Login</button>
+    
+          <button class="register" type="button">Register</button>
+        </ul>
+
+
+      </nav>
+
+      <div>
+        <button id="openmenu"><img src="/icon-menu.svg" alt=""></button>
+      </div>
+
+
+
+    </header>
+
+
+
+    
+
+
+
+    
+    
+   <div class="maincontainer">
+
+
+    <div class="img">
+
+      <picture>
+        <source media="(min-width: 1000px)" srcset="image-hero-desktop.png">
+        <img src="image-hero-mobile.png" alt="">
+      </picture>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="text">
+
+
+      <h1>Make remote work</h1>
+
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+
+       <div class="learnmore">
+        <button class="learnmorebtn" type="button">Learn more</button>
+       </div>
+
+
+      <div class="imgs">
+        <img src="client-databiz.svg" alt="">
+        <img src="client-audiophile.svg" alt="">
+        <img src="client-meet.svg" alt="">
+        <img src="client-maker.svg" alt="">
+      </div>
+
+    </div>
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
