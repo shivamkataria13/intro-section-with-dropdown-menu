@@ -68,9 +68,10 @@ button{
     transition: all .3s ease-in-out;
 }
 
-.navbar ul{
+.nav-ul{
     margin: 10rem 1.6rem 2rem;
 }
+
 
 .navbar ul li{
     padding: 1rem;
@@ -87,6 +88,38 @@ button{
     cursor: pointer;
 }
 
+.login{
+    color: hsl(0, 0%, 41%);
+    font-size: 1.5rem;
+    margin: 2rem auto ;
+    display: block;
+    background: transparent;
+    transition: all .3s ease;
+}
+
+.register{
+    color: hsl(0, 0%, 41%);
+    font-size: 1.5rem;
+    margin: 2rem auto ;
+    display: block;
+    border: .2rem solid;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    width: 80%;
+    max-width: 20rem;
+    background: transparent;
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .features, .company{
@@ -101,11 +134,8 @@ button{
 .featuresmenu, .companymenu{
     height: max-content;
     width: max-content;
-    margin: auto;
+    margin: auto auto ;
     padding: 1rem;
-    /* background-color: rgb(255, 255, 255);
-    border-radius: .6rem;
-    box-shadow: .1rem .1rem 1rem .1rem rgba(0, 0, 0, 0.3); */
     transition: all .3s ease-in-out;
 }
 
@@ -133,7 +163,7 @@ button{
     transition: all .3s ease;
 }
 
-.navbar ul img{
+.company img, .features img{
     margin: auto 1rem;
     height: .6rem;
     width: auto;
@@ -143,28 +173,15 @@ button{
 .featuresmenu ul img{
     height: 1.6rem;
     width: auto;
+    margin: auto 1rem;
+    cursor: pointer;
 }
 
 
-.login{
-    color: hsl(0, 0%, 41%);
-    font-size: 1.5rem;
-    margin: 2rem auto ;
-    display: block;
-    background: transparent;
-}
 
-.register{
-    color: hsl(0, 0%, 41%);
-    font-size: 1.5rem;
-    margin: 2rem auto ;
-    display: block;
-    border: .2rem solid;
-    border-radius: 1.3rem;
-    padding: 1rem;
-    width: 80%;
-    background: transparent;
-}
+
+
+
 
 
 
@@ -178,6 +195,8 @@ button{
     background-color: rgb(255, 255, 255);
     z-index: 99999999;
 }
+
+
 
 
 
@@ -227,4 +246,171 @@ button{
     height: 2rem;
     margin: 0rem .6rem 0;
     width: auto;
+}
+
+
+
+
+
+@media (min-width: 1000px) {
+    #openmenu, #closemenu{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        position: relative;
+        justify-content: start;
+    }
+
+    .navbar{
+        display: flex;
+        position: relative;
+        margin: 1rem;
+        opacity: 1;
+        z-index: 9999999;
+        transition: all .3s ease-in-out;
+        width: 100%;
+    }
+    
+    .nav-ul, .nav-ul ul{
+        display: flex;
+        gap: 3.1rem;
+        margin: 0 0 0 2rem;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .navbar ul li{
+        padding: .6rem;
+        font-size: 1.2rem;
+    }
+
+
+
+
+    .company img, .features img{
+        margin: auto 0;
+    }
+
+    .featuresmenu ul,.companymenu ul{
+        display: block;
+        margin: 0;
+    }
+    
+    .featuresmenu, .companymenu{
+        position: absolute;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        border-radius: .6rem;
+        box-shadow: .1rem .1rem 1rem .1rem rgba(0, 0, 0, 0.3);
+    }
+
+    .featuresmenu{
+        left: -1rem;
+        top: 100%;
+    }
+
+    .companymenu{
+        left: 14rem;
+        top: 100%;
+    }
+
+    
+
+    .headerbuttons{
+        margin-left: auto;
+        margin-right: 3.1rem;
+        justify-content: flex-end;
+        float: right;
+        display: flex;
+        gap: 3.1rem;
+    }
+    
+    .login, .register{
+        font-size: 1.2rem;
+        margin: 0;
+        font-weight: 700;
+    }
+    
+    .register{
+        width: 11rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .maincontainer{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .text{
+        grid-column-start: 1;
+        grid-row-end: 1;
+        padding: 10% 2%;
+        text-align: left;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text h1{
+        font-size: 7rem;
+        padding: 0 20%;
+    }
+    
+    .text p{
+        margin: 3% 36% 0 20%;
+    }
+
+    .text .learnmore{
+        margin: 4% 20% 0;
+    }
+
+    .text .learnmore button{
+        padding: 1rem 2.6rem;
+    }
+
+    .text .imgs{
+        text-align: center;
+        margin: 10% 16% 0 18%;
+    }
+
+    .imgs{
+        margin: 10% 20% 0;
+    }
+
+    .imgs img{
+        height: 2.7rem;
+        float: left;
+    }
+
+
+
+    .img{
+        grid-column-start: 2;
+        text-align: center;
+        margin-top: 3.1rem;
+    }
+
+    .img img{
+        height: auto;
+        width: 40rem;
+    }
+    
+
+
+
+
+
 }

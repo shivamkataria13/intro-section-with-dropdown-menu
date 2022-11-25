@@ -13,7 +13,7 @@ openmenu.addEventListener("click", () => {
 
 closemenu.addEventListener("click", () => {
     navbar.classList.remove("open")
-    ul.style.display = "none"
+    ul.style.display = "flex"
     closemenu.style.display = "none"
 } )
 
